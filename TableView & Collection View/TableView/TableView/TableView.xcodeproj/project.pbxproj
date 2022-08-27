@@ -15,6 +15,7 @@
 		42B2978028BA19480061EDC4 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42B2977F28BA19480061EDC4 /* TableViewController.swift */; };
 		42B2978428BA1CEA0061EDC4 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42B2978328BA1CEA0061EDC4 /* TableViewCell.swift */; };
 		42B2978628BA1D930061EDC4 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42B2978528BA1D930061EDC4 /* Model.swift */; };
+		42B2978828BA26D20061EDC4 /* NewTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42B2978728BA26D20061EDC4 /* NewTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		42B2977F28BA19480061EDC4 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		42B2978328BA1CEA0061EDC4 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		42B2978528BA1D930061EDC4 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		42B2978728BA26D20061EDC4 /* NewTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				42B2974B28BA17AA0061EDC4 /* AppDelegate.swift */,
 				42B2974D28BA17AA0061EDC4 /* SceneDelegate.swift */,
 				42B2975128BA17AA0061EDC4 /* Main.storyboard */,
+				42B2978728BA26D20061EDC4 /* NewTableViewController.swift */,
 				42B2977F28BA19480061EDC4 /* TableViewController.swift */,
 				42B2978328BA1CEA0061EDC4 /* TableViewCell.swift */,
 				42B2975428BA17AB0061EDC4 /* Assets.xcassets */,
@@ -146,6 +149,7 @@
 			files = (
 				42B2978628BA1D930061EDC4 /* Model.swift in Sources */,
 				42B2974C28BA17AA0061EDC4 /* AppDelegate.swift in Sources */,
+				42B2978828BA26D20061EDC4 /* NewTableViewController.swift in Sources */,
 				42B2978428BA1CEA0061EDC4 /* TableViewCell.swift in Sources */,
 				42B2978028BA19480061EDC4 /* TableViewController.swift in Sources */,
 				42B2974E28BA17AA0061EDC4 /* SceneDelegate.swift in Sources */,

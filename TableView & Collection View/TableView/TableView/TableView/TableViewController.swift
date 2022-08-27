@@ -21,7 +21,14 @@ class TableViewController: UITableViewController {
         self.title = "EMOJI"
         self.navigationItem.leftBarButtonItem = editButtonItem // add BarButtonItem
     }
-
+    @IBAction func unwindSegue(segue:UIStoryboardSegue){
+        guard segue.identifier == "saveSegue" else {return}
+        let sourceVC = segue.source as! NewTableViewController
+        let emoji = sourceVC.emoji
+        let newIndexPath = IndexPath(row: objects.count, section: 0)
+        objects.append(emoji)
+        tableView.insertRows(at: [newIndexPath], with: .fade) // add new element in tablevc
+    }
     // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {
