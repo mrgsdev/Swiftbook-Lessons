@@ -22,12 +22,28 @@ class TableViewController: UITableViewController {
         self.navigationItem.leftBarButtonItem = editButtonItem // add BarButtonItem
     }
     @IBAction func unwindSegue(segue:UIStoryboardSegue){
-        guard segue.identifier == "saveSegue" else {return}
+        guard segue.identifier == "saveSegue" else { return }
         let sourceVC = segue.source as! NewTableViewController
         let emoji = sourceVC.emoji
-        let newIndexPath = IndexPath(row: objects.count, section: 0)
-        objects.append(emoji)
-        tableView.insertRows(at: [newIndexPath], with: .fade) // add new element in tablevc
+        if let selectedIndexPath = tableView.indexPathForSelectedRow {
+            objects[selectedIndexPath.row] = emoji
+            tableView.reloadRows(at: [selectedIndexPath], with: .fade)
+        }else{
+            let newIndexPath = IndexPath(row: objects.count, section: 0)
+            objects.append(emoji)
+            tableView.insertRows(at: [newIndexPath], with: .fade) // add new element in tablevc
+        }
+    }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        super.prepare(for: segue, sender: sender)
+        guard segue.identifier == "didSelectCell" else { return }
+        let indexPath = tableView.indexPathForSelectedRow!
+        let emoji = objects[indexPath.row]
+        let navVC = segue.destination as! UINavigationController
+        let newEmojiVC = navVC.topViewController as! NewTableViewController
+        newEmojiVC.emoji = emoji
+        newEmojiVC.title = "Edit"
+        
     }
     // MARK: - Table view data source
 
