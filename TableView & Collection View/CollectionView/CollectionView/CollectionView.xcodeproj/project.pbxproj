@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4253BD5028BBC75C00CE171E /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4253BD4F28BBC75C00CE171E /* DetailViewController.swift */; };
 		42B2976C28BA17D70061EDC4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42B2976B28BA17D70061EDC4 /* AppDelegate.swift */; };
 		42B2976E28BA17D70061EDC4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42B2976D28BA17D70061EDC4 /* SceneDelegate.swift */; };
 		42B2977328BA17D70061EDC4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 42B2977128BA17D70061EDC4 /* Main.storyboard */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4253BD4F28BBC75C00CE171E /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		42B2976828BA17D70061EDC4 /* CollectionView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CollectionView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		42B2976B28BA17D70061EDC4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		42B2976D28BA17D70061EDC4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -66,6 +68,7 @@
 				42B2977428BA17D80061EDC4 /* Assets.xcassets */,
 				42B2977628BA17D80061EDC4 /* LaunchScreen.storyboard */,
 				42B2977928BA17D80061EDC4 /* Info.plist */,
+				4253BD4F28BBC75C00CE171E /* DetailViewController.swift */,
 			);
 			path = CollectionView;
 			sourceTree = "<group>";
@@ -143,6 +146,7 @@
 			files = (
 				42E3DDE228BBA43700EC074D /* CollectionViewController.swift in Sources */,
 				42B2976C28BA17D70061EDC4 /* AppDelegate.swift in Sources */,
+				4253BD5028BBC75C00CE171E /* DetailViewController.swift in Sources */,
 				42E3DDE428BBA69300EC074D /* CollectionViewCell.swift in Sources */,
 				42B2976E28BA17D70061EDC4 /* SceneDelegate.swift in Sources */,
 			);

@@ -3,6 +3,7 @@
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -16,20 +17,36 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="pUs-Xu-hbj">
-                            <size key="itemSize" width="128" height="128"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="pUs-Xu-hbj">
+                            <size key="itemSize" width="129" height="129"/>
                             <size key="headerReferenceSize" width="0.0" height="0.0"/>
                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                         </collectionViewFlowLayout>
                         <cells>
                             <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cell" id="Mm7-CH-NOY" customClass="CollectionViewCell" customModule="CollectionView" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                <rect key="frame" x="0.0" y="0.0" width="129" height="129"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="pyd-tb-vrQ">
-                                    <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="0gc-Zn-mav">
+                                    <rect key="frame" x="0.0" y="0.0" width="129" height="129"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dog1" translatesAutoresizingMaskIntoConstraints="NO" id="9my-6V-kJe">
+                                            <rect key="frame" x="0.0" y="0.0" width="129" height="129"/>
+                                        </imageView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="trailing" secondItem="9my-6V-kJe" secondAttribute="trailing" id="2Xm-dJ-Fsg"/>
+                                        <constraint firstAttribute="bottom" secondItem="9my-6V-kJe" secondAttribute="bottom" id="2jg-HQ-OZq"/>
+                                        <constraint firstItem="9my-6V-kJe" firstAttribute="top" secondItem="0gc-Zn-mav" secondAttribute="top" id="7d8-SX-vTF"/>
+                                        <constraint firstItem="9my-6V-kJe" firstAttribute="leading" secondItem="0gc-Zn-mav" secondAttribute="leading" id="X4e-b7-xCr"/>
+                                    </constraints>
                                 </collectionViewCellContentView>
+                                <size key="customSize" width="129" height="129"/>
+                                <connections>
+                                    <outlet property="photosView" destination="9my-6V-kJe" id="cNt-8j-E5I"/>
+                                    <segue destination="MyT-7e-bJk" kind="presentation" identifier="pickPhotoSegue" id="8qP-fV-mD8"/>
+                                </connections>
                             </collectionViewCell>
                         </cells>
                         <connections>
@@ -42,6 +59,38 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TO3-vB-soF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="828.98550724637687" y="31.473214285714285"/>
+        </scene>
+        <!--Detail View Controller-->
+        <scene sceneID="ugG-ko-lMO">
+            <objects>
+                <viewController id="MyT-7e-bJk" customClass="DetailViewController" customModule="CollectionView" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="OHn-3i-EiJ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dog7" translatesAutoresizingMaskIntoConstraints="NO" id="fCR-7k-X63">
+                                <rect key="frame" x="0.0" y="55" width="414" height="732"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="500" id="WrK-3i-dgw"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="jLP-75-VaG"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="fCR-7k-X63" firstAttribute="leading" secondItem="OHn-3i-EiJ" secondAttribute="leading" id="2gn-f3-guv"/>
+                            <constraint firstAttribute="trailing" secondItem="fCR-7k-X63" secondAttribute="trailing" id="GCJ-1X-t1a"/>
+                            <constraint firstItem="fCR-7k-X63" firstAttribute="centerY" secondItem="OHn-3i-EiJ" secondAttribute="centerY" id="kAu-ur-0zm"/>
+                            <constraint firstItem="fCR-7k-X63" firstAttribute="centerX" secondItem="OHn-3i-EiJ" secondAttribute="centerX" id="ya1-qY-ujR"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="photoImageView" destination="fCR-7k-X63" id="Qol-me-ltX"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EZL-Dt-j4A" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1569.5652173913045" y="30.803571428571427"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="WVL-Mz-z7t">
@@ -63,6 +112,8 @@
         </scene>
     </scenes>
     <resources>
+        <image name="dog1" width="640" height="480"/>
+        <image name="dog7" width="640" height="732"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
