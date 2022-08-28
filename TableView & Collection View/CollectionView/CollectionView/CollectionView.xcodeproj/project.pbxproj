@@ -9,21 +9,23 @@
 /* Begin PBXBuildFile section */
 		42B2976C28BA17D70061EDC4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42B2976B28BA17D70061EDC4 /* AppDelegate.swift */; };
 		42B2976E28BA17D70061EDC4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42B2976D28BA17D70061EDC4 /* SceneDelegate.swift */; };
-		42B2977028BA17D70061EDC4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42B2976F28BA17D70061EDC4 /* ViewController.swift */; };
 		42B2977328BA17D70061EDC4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 42B2977128BA17D70061EDC4 /* Main.storyboard */; };
 		42B2977528BA17D80061EDC4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 42B2977428BA17D80061EDC4 /* Assets.xcassets */; };
 		42B2977828BA17D80061EDC4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 42B2977628BA17D80061EDC4 /* LaunchScreen.storyboard */; };
+		42E3DDE228BBA43700EC074D /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42E3DDE128BBA43700EC074D /* CollectionViewController.swift */; };
+		42E3DDE428BBA69300EC074D /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42E3DDE328BBA69300EC074D /* CollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		42B2976828BA17D70061EDC4 /* CollectionView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CollectionView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		42B2976B28BA17D70061EDC4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		42B2976D28BA17D70061EDC4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		42B2976F28BA17D70061EDC4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		42B2977228BA17D70061EDC4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		42B2977428BA17D80061EDC4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		42B2977728BA17D80061EDC4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		42B2977928BA17D80061EDC4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		42E3DDE128BBA43700EC074D /* CollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
+		42E3DDE328BBA69300EC074D /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,7 +60,8 @@
 			children = (
 				42B2976B28BA17D70061EDC4 /* AppDelegate.swift */,
 				42B2976D28BA17D70061EDC4 /* SceneDelegate.swift */,
-				42B2976F28BA17D70061EDC4 /* ViewController.swift */,
+				42E3DDE128BBA43700EC074D /* CollectionViewController.swift */,
+				42E3DDE328BBA69300EC074D /* CollectionViewCell.swift */,
 				42B2977128BA17D70061EDC4 /* Main.storyboard */,
 				42B2977428BA17D80061EDC4 /* Assets.xcassets */,
 				42B2977628BA17D80061EDC4 /* LaunchScreen.storyboard */,
@@ -138,8 +141,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				42B2977028BA17D70061EDC4 /* ViewController.swift in Sources */,
+				42E3DDE228BBA43700EC074D /* CollectionViewController.swift in Sources */,
 				42B2976C28BA17D70061EDC4 /* AppDelegate.swift in Sources */,
+				42E3DDE428BBA69300EC074D /* CollectionViewCell.swift in Sources */,
 				42B2976E28BA17D70061EDC4 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
