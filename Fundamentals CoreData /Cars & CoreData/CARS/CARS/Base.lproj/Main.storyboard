@@ -1,24 +1,170 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="mz1-dZ-dUi">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <scene sceneID="boT-FI-MDF">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                <viewController id="mz1-dZ-dUi" customClass="ViewController" customModule="CARS" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Fzh-By-fwf"/>
+                        <viewControllerLayoutGuide type="bottom" id="Hnu-tM-LDe"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="92V-mf-SFB">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="lamborginiMurcielago" translatesAutoresizingMaskIntoConstraints="NO" id="eHw-ro-jWs">
+                                <rect key="frame" x="20" y="181.5" width="374" height="136.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="eHw-ro-jWs" secondAttribute="height" multiplier="35:8" constant="-223.125" id="igr-fa-6E9"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mark" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="8d3-J4-PeY">
+                                <rect key="frame" x="93.5" y="64" width="227" height="33"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="8d3-J4-PeY" secondAttribute="height" multiplier="76:11" id="hFE-Xf-n8r"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="18"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rating: X / 10.0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wvc-9M-RDj">
+                                <rect key="frame" x="263" y="336" width="131" height="22"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Wvc-9M-RDj" secondAttribute="height" multiplier="36:7" constant="17.857142857142847" id="YVG-ba-MZN"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="18"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Last time started:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uCG-of-pfs">
+                                <rect key="frame" x="20" y="336" width="374" height="22"/>
+                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="18"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iYb-p6-TJY">
+                                <rect key="frame" x="16" y="806" width="112" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="iYb-p6-TJY" secondAttribute="height" multiplier="16:15" constant="77.866666666666674" id="VLa-6c-jAa"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="16"/>
+                                <state key="normal" title="Start engine" backgroundImage="button">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="startEnginePressed:" destination="mz1-dZ-dUi" eventType="touchUpInside" id="hHd-5r-I8W"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="myChoice" translatesAutoresizingMaskIntoConstraints="NO" id="5T1-Vq-Unw">
+                                <rect key="frame" x="134" y="460" width="146" height="145.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="5T1-Vq-Unw" secondAttribute="height" multiplier="1:1" id="NIq-gm-Wzm"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Model" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="prs-5K-1B9">
+                                <rect key="frame" x="86" y="105.5" width="242" height="43"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="prs-5K-1B9" secondAttribute="height" multiplier="162:29" id="IvG-xo-aNy"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-SemiBold" family="Apple SD Gothic Neo" pointSize="24"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9TE-tE-Kh2">
+                                <rect key="frame" x="282" y="806" width="112" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="9TE-tE-Kh2" secondAttribute="height" multiplier="23:15" constant="62.93333333333333" id="uhv-t1-Fyp"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="16"/>
+                                <state key="normal" title="Rate" backgroundImage="button">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="rateItPressed:" destination="mz1-dZ-dUi" eventType="touchUpInside" id="BOn-gy-bgc"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Number of trips: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eOz-zj-fKn">
+                                <rect key="frame" x="16" y="366" width="382" height="22"/>
+                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="18"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="fmg-BO-O8B">
+                                <rect key="frame" x="0.0" y="413" width="414" height="32"/>
+                                <segments>
+                                    <segment title="Lamborgini"/>
+                                    <segment title="Ferrari"/>
+                                    <segment title="Mercedes"/>
+                                    <segment title="Nissan"/>
+                                    <segment title="BMW"/>
+                                </segments>
+                                <connections>
+                                    <action selector="segmentedCtrlPressed:" destination="mz1-dZ-dUi" eventType="valueChanged" id="3gk-B3-ywH"/>
+                                </connections>
+                            </segmentedControl>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="rHb-ZC-alC"/>
+                        <color key="backgroundColor" red="0.99492442609999998" green="0.99004387859999998" blue="0.98989319799999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="eHw-ro-jWs" firstAttribute="top" secondItem="prs-5K-1B9" secondAttribute="bottom" constant="33" id="00G-zX-O6T"/>
+                            <constraint firstItem="uCG-of-pfs" firstAttribute="top" secondItem="eHw-ro-jWs" secondAttribute="bottom" constant="18" id="2vj-kU-vpo"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="9TE-tE-Kh2" secondAttribute="trailing" id="4dt-es-0SK"/>
+                            <constraint firstItem="eOz-zj-fKn" firstAttribute="top" secondItem="uCG-of-pfs" secondAttribute="bottom" constant="8" id="6nh-uh-wp9"/>
+                            <constraint firstItem="5T1-Vq-Unw" firstAttribute="width" secondItem="92V-mf-SFB" secondAttribute="height" multiplier="13:80" id="70O-CC-rv3"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="eHw-ro-jWs" secondAttribute="leading" id="AlX-ZL-72k"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="fmg-BO-O8B" secondAttribute="trailing" id="B96-3B-rLX"/>
+                            <constraint firstItem="iYb-p6-TJY" firstAttribute="leading" secondItem="92V-mf-SFB" secondAttribute="leading" constant="16" id="CWg-cG-8LO"/>
+                            <constraint firstItem="eHw-ro-jWs" firstAttribute="centerX" secondItem="prs-5K-1B9" secondAttribute="centerX" id="KpU-6v-W70"/>
+                            <constraint firstItem="uCG-of-pfs" firstAttribute="leading" secondItem="eHw-ro-jWs" secondAttribute="leading" id="NXy-80-cst"/>
+                            <constraint firstAttribute="trailing" secondItem="eOz-zj-fKn" secondAttribute="trailing" constant="16" id="NeF-7J-Ms5"/>
+                            <constraint firstItem="8d3-J4-PeY" firstAttribute="top" secondItem="rHb-ZC-alC" secondAttribute="top" constant="20" id="Orp-wK-Ihu"/>
+                            <constraint firstItem="5T1-Vq-Unw" firstAttribute="top" secondItem="fmg-BO-O8B" secondAttribute="bottom" constant="16" id="RuT-wa-TfL"/>
+                            <constraint firstItem="fmg-BO-O8B" firstAttribute="top" secondItem="eOz-zj-fKn" secondAttribute="bottom" constant="25" id="Tuv-cu-NHV"/>
+                            <constraint firstItem="fmg-BO-O8B" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="92V-mf-SFB" secondAttribute="leading" id="Vqz-RS-kb7"/>
+                            <constraint firstItem="Wvc-9M-RDj" firstAttribute="top" secondItem="eHw-ro-jWs" secondAttribute="bottom" constant="18" id="Y5Y-xQ-a2a"/>
+                            <constraint firstItem="rHb-ZC-alC" firstAttribute="bottom" secondItem="iYb-p6-TJY" secondAttribute="bottom" constant="24" id="YIF-ij-JIs"/>
+                            <constraint firstItem="5T1-Vq-Unw" firstAttribute="centerX" secondItem="92V-mf-SFB" secondAttribute="centerX" id="bFv-h6-Zep"/>
+                            <constraint firstItem="rHb-ZC-alC" firstAttribute="bottom" secondItem="9TE-tE-Kh2" secondAttribute="bottom" constant="24" id="cjE-aX-rrX"/>
+                            <constraint firstItem="uCG-of-pfs" firstAttribute="trailing" secondItem="eHw-ro-jWs" secondAttribute="trailing" id="djA-R7-Wni"/>
+                            <constraint firstItem="prs-5K-1B9" firstAttribute="centerX" secondItem="8d3-J4-PeY" secondAttribute="centerX" id="eUf-ld-3BH"/>
+                            <constraint firstItem="9TE-tE-Kh2" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="92V-mf-SFB" secondAttribute="leadingMargin" id="ecr-bJ-4aR"/>
+                            <constraint firstItem="Wvc-9M-RDj" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="92V-mf-SFB" secondAttribute="leading" constant="20" symbolic="YES" id="gwT-gp-y7P"/>
+                            <constraint firstItem="eOz-zj-fKn" firstAttribute="leading" secondItem="92V-mf-SFB" secondAttribute="leading" constant="16" id="ieX-ki-TyV"/>
+                            <constraint firstItem="8d3-J4-PeY" firstAttribute="width" secondItem="92V-mf-SFB" secondAttribute="height" multiplier="19:75" id="kbp-gd-VJi"/>
+                            <constraint firstItem="prs-5K-1B9" firstAttribute="top" secondItem="8d3-J4-PeY" secondAttribute="bottom" constant="8.5" id="ldS-Of-fDG"/>
+                            <constraint firstItem="fmg-BO-O8B" firstAttribute="centerX" secondItem="92V-mf-SFB" secondAttribute="centerX" id="qhH-Li-Pfm"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="eHw-ro-jWs" secondAttribute="trailing" id="rol-m0-zB7"/>
+                            <constraint firstItem="8d3-J4-PeY" firstAttribute="centerX" secondItem="92V-mf-SFB" secondAttribute="centerX" id="ubo-a4-Ysa"/>
+                            <constraint firstItem="Wvc-9M-RDj" firstAttribute="trailing" secondItem="eHw-ro-jWs" secondAttribute="trailing" id="ugI-NG-n8K"/>
+                            <constraint firstItem="prs-5K-1B9" firstAttribute="width" secondItem="92V-mf-SFB" secondAttribute="height" multiplier="27:100" id="v1h-ul-eBb"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="iYb-p6-TJY" secondAttribute="trailing" id="w5Q-L4-j74"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="carImageView" destination="eHw-ro-jWs" id="uUo-jr-rnp"/>
+                        <outlet property="lastTimeStartedLabel" destination="uCG-of-pfs" id="Oas-SO-rMO"/>
+                        <outlet property="markLabel" destination="8d3-J4-PeY" id="36e-WB-oIz"/>
+                        <outlet property="modelLabel" destination="prs-5K-1B9" id="KFl-nh-0cw"/>
+                        <outlet property="myChoiceImageView" destination="5T1-Vq-Unw" id="8Tt-NA-5ea"/>
+                        <outlet property="numberOfTripsLabel" destination="eOz-zj-fKn" id="70X-SI-3jB"/>
+                        <outlet property="ratingLabel" destination="Wvc-9M-RDj" id="F4g-t6-KTT"/>
+                        <outlet property="segmentedControl" destination="fmg-BO-O8B" id="ia8-cS-sHq"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MEP-Jp-cTC" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="448.80000000000001" y="352.17391304347831"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="button" width="112" height="32"/>
+        <image name="lamborginiMurcielago" width="210" height="101"/>
+        <image name="myChoice" width="150" height="150"/>
+    </resources>
 </document>
