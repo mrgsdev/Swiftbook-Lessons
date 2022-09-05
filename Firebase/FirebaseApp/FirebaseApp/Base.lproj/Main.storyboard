@@ -10,7 +10,7 @@
         <!--LoginVC-->
         <scene sceneID="VGs-R3-2UH">
             <objects>
-                <viewController id="iMN-jo-A6L" customClass="LoginVC" customModule="FirebaseApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LoginVC" id="iMN-jo-A6L" customClass="LoginVC" customModule="FirebaseApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="nDg-qr-fmZ"/>
                         <viewControllerLayoutGuide type="bottom" id="xhw-RW-CGf"/>

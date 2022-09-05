@@ -15,7 +15,17 @@ class LoginVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad() 
-        
+        view.backgroundColor = .yellow
+        Auth.auth().addStateDidChangeListener { auth, user in // 
+            if user == nil{
+                print("123")
+            } else{
+                let vc =  TaskVC()
+                let nav = UINavigationController.init(rootViewController: vc)
+                nav.modalPresentationStyle = .fullScreen
+                self.present(nav, animated: true, completion: nil)
+            }
+        }
     }
     
   
@@ -72,10 +82,10 @@ class LoginVC: UIViewController {
             // Dismiss keyboard
             self.view.endEditing(true)
             // Present the main view
-            let navVc = TaskVC()
-            UserDefaults.standard.set(true, forKey: "true")
-            self.warnLabel.text = "SUCCESS"
-            self.navigationController?.viewControllers = [navVc]
+//            let navVc = TaskVC()
+////            UserDefaults.standard.set(true, forKey: "true")
+//            self.warnLabel.text = "SUCCESS"
+//            self.navigationController?.viewControllers = [navVc]
 
         })
 

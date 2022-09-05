@@ -12,10 +12,23 @@ import FirebaseCore
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
-
+    var window: UIWindow? = UIWindow(frame: UIScreen.main.bounds)
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         FirebaseApp.configure()
+        // UserDefaults WORK
+//        let mainViewController = LoginVC()
+//        let navigationController = UINavigationController(rootViewController: mainViewController)
+//        if UserDefaults.standard.bool(forKey: "true")  {
+//            let viewController = TaskVC()
+//            navigationController.viewControllers = [viewController]
+//        }else{
+//            let viewController = LoginVC()
+//            navigationController.viewControllers = [viewController]
+//        }
+//        window = UIWindow(frame: UIScreen.main.bounds)
+//        window?.rootViewController = navigationController
+//        window?.makeKeyAndVisible()
         return true
     }
 
