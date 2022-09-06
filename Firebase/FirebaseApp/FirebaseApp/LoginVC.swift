@@ -14,8 +14,8 @@ class LoginVC: UIViewController {
     @IBOutlet weak var passwordTextField: UITextField!
     
     override func viewDidLoad() {
-        super.viewDidLoad() 
-        view.backgroundColor = .yellow
+        super.viewDidLoad()
+        warnLabel.text = ""
         Auth.auth().addStateDidChangeListener { auth, user in // 
             if user == nil{
                 print("123")
@@ -27,7 +27,12 @@ class LoginVC: UIViewController {
             }
         }
     }
-    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        emailTextField.text = ""
+        warnLabel.text = ""
+        passwordTextField.text = ""
+    }
   
     
     override func didReceiveMemoryWarning() {
