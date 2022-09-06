@@ -7,14 +7,16 @@
 
 import UIKit
 import FirebaseAuth
+import FirebaseDatabase
 class LoginVC: UIViewController {
-    
+    var ref:DatabaseReference!
     @IBOutlet weak var warnLabel: UILabel!
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        ref = Database.database().reference(withPath: "users")
         warnLabel.text = ""
         Auth.auth().addStateDidChangeListener { auth, user in // 
             if user == nil{
@@ -140,7 +142,9 @@ class LoginVC: UIViewController {
                     }
                 })
             }
-            
+            // Save userDB
+            let userRef = self?.ref.child((user?.user.uid)!)
+            userRef?.setValue(["email":user!.user.email!])
             // Dismiss keyboard
             self?.view.endEditing(true)
             
