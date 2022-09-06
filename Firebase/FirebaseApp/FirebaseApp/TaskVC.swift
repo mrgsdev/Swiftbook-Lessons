@@ -7,17 +7,39 @@
 
 import UIKit
 import FirebaseAuth
+import FirebaseDatabase
 class TaskVC: UITableViewController {
-    
+    var user:User!
+    var ref:DatabaseReference!
+    var tasksArray = [Tasks]()
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        guard let currentUser = Auth.auth().currentUser else { return } 
+        user = User(user: currentUser)
+        ref = Database.database().reference(withPath: "users").child(user.uid).child("tasks")
+        
         self.navigationItem.leftBarButtonItem = UIBarButtonItem(title: "SignOut", style: .plain, target: self, action: #selector(signOut))
         self.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "+", style: .plain, target: self, action: #selector(addTapped))
         self.tableView.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
     }
     @objc func addTapped(){
         
-        
+        let alertController = UIAlertController(title: "New task", message: "Add new task", preferredStyle: .alert)
+        alertController.addTextField()
+        let save = UIAlertAction(title: "Save", style: .default) { [weak self] _ in
+            guard let txtfld = alertController.textFields?.first,txtfld.text != "" else{
+                return
+            }
+            let task = Tasks(title: txtfld.text!, userId: (self?.user.uid)!)
+            let taskRef = self?.ref.child(task.title.lowercased())
+            taskRef?.setValue(["title":task.title,"userID":task.userId,"completed":task.completed])
+            
+        }
+        let cancel = UIAlertAction(title: "cancel", style: .default)
+        alertController.addAction(save)
+        alertController.addAction(cancel)
+        present(alertController, animated: true)
         
     }
     @objc func signOut(){
