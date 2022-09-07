@@ -23,6 +23,19 @@ class TaskVC: UITableViewController {
         self.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "+", style: .plain, target: self, action: #selector(addTapped))
         self.tableView.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        ref.observe(.value) { snapshot in
+            var junkArray = [Tasks]()
+            for item in snapshot.children{
+                let task = Tasks(snapshot: item as! DataSnapshot)
+                junkArray.append(task)
+            }
+            self.tasksArray = junkArray
+            self.tableView.reloadData()
+        }
+    }
     @objc func addTapped(){
         
         let alertController = UIAlertController(title: "New task", message: "Add new task", preferredStyle: .alert)
@@ -31,9 +44,9 @@ class TaskVC: UITableViewController {
             guard let txtfld = alertController.textFields?.first,txtfld.text != "" else{
                 return
             }
-            let task = Tasks(title: txtfld.text!, userId: (self?.user.uid)!)
+            let task = Tasks(title: txtfld.text!)
             let taskRef = self?.ref.child(task.title.lowercased())
-            taskRef?.setValue(["title":task.title,"userID":task.userId,"completed":task.completed])
+            taskRef?.setValue(["title":task.title,"completed":task.completed])
             
         }
         let cancel = UIAlertAction(title: "cancel", style: .default)
@@ -61,7 +74,7 @@ class TaskVC: UITableViewController {
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 5
+        return tasksArray.count
     }
     
     
@@ -69,8 +82,7 @@ class TaskVC: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
         
         cell.backgroundColor = .clear
-        cell.textLabel?.text = "This is cell number \(indexPath.row)"
-        cell.textLabel?.textColor = .white
+        cell.textLabel?.text = tasksArray[indexPath.row].title
         return cell
     }
     

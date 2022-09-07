@@ -8,7 +8,7 @@
 import UIKit
 import FirebaseAuth
 import FirebaseDatabase
-class LoginVC: UIViewController {
+class WelcomeVC: UIViewController {
     var ref:DatabaseReference!
     @IBOutlet weak var warnLabel: UILabel!
     @IBOutlet weak var emailTextField: UITextField!
@@ -16,6 +16,8 @@ class LoginVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        warnLabel.font = UIFont(name: "Party Let Plain", size: 10)
         ref = Database.database().reference(withPath: "users")
         warnLabel.text = ""
         Auth.auth().addStateDidChangeListener { auth, user in // 
