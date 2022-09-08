@@ -86,6 +86,16 @@ class TaskVC: UITableViewController {
         return cell
     }
     
+    override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
+        return true
+    }
+    
+    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        if editingStyle == .delete {
+            let task = tasksArray[indexPath.row]
+            task.ref?.removeValue()
+        }
+    }
     
     /*
      // Override to support conditional editing of the table view.
