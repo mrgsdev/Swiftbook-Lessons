@@ -18,13 +18,15 @@ class NetworkWeatherManager {
         let apiKey = "9da98dc83df80ab8c815947f4f92cf1a"
         let urlString = "https://api.openweathermap.org/data/2.5/weather?q=\(city)&appid=\(apiKey)"
         guard let url = URL(string: urlString) else { return }
-        let session = URLSession.shared
-        let task = session.dataTask(with: url) { data, response, error in
+        let task = URLSession.shared.dataTask(with: url) { data, response, error in
             if let data = data {
                 if let currentWeather = self.pasrseJSON(withData: data){
                     self.delegate?.update(self, with: currentWeather)
+                    print(currentWeather)
                 }
+            
             }
+  
         }
         task.resume()
     }
