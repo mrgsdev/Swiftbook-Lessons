@@ -24,7 +24,11 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        networkWeatherManager.fetchCurrentWeather(forCity: "Moscow") 
+        networkWeatherManager.onCompletion = { currentWeather in
+            print("onCompletion \(currentWeather.cityName)")
+            
+        }
+        networkWeatherManager.fetchCurrentWeather(forCity: "Moscow")
     }
 
 }

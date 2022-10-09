@@ -6,13 +6,10 @@
 //
 
 import Foundation
-protocol NetworkWeatherManagerDelegate:AnyObject {
-    func update(_: NetworkWeatherManager,with currentWeather:CurrentWeather)
-}
-
 class NetworkWeatherManager {
     
-   weak var delegate:NetworkWeatherManagerDelegate?
+    var onCompletion: ((CurrentWeather) -> Void)?
+    
     func fetchCurrentWeather(forCity city:String) {
         // API
         let apiKey = "9da98dc83df80ab8c815947f4f92cf1a"
@@ -21,7 +18,7 @@ class NetworkWeatherManager {
         let task = URLSession.shared.dataTask(with: url) { data, response, error in
             if let data = data {
                 if let currentWeather = self.pasrseJSON(withData: data){
-                    self.delegate?.update(self, with: currentWeather)
+                    self.onCompletion?(currentWeather)
                     print(currentWeather)
                 }
             
