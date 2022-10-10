@@ -16,8 +16,9 @@ class ViewController: UIViewController {
     
     
     @IBAction func searchPressed(_ sender: UIButton) {
-        self.presentSearchAlertController(withTitle: "Enter city name", message: nil, style: .alert) { cityName in
-            self.networkWeatherManager.fetchCurrentWeather(forCity: cityName)
+        self.presentSearchAlertController(withTitle: "Enter city name", message: nil, style: .alert) { [weak self] cityName in
+            guard let selfStrong = self else { return }
+            selfStrong.networkWeatherManager.fetchCurrentWeather(forCity: cityName)
         }
             
     }
@@ -25,11 +26,19 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         networkWeatherManager.onCompletion = { currentWeather in
-            print("onCompletion \(currentWeather.cityName)")
-            
+            self.updateUI(weather: currentWeather)
         }
         networkWeatherManager.fetchCurrentWeather(forCity: "Moscow")
     }
 
 }
-
+extension ViewController{
+    private func updateUI(weather: CurrentWeather)   {
+        DispatchQueue.main.async {
+            self.cityLabel.text = weather.cityName
+            self.temperatureLabel.text = weather.temperatureString
+            self.feelsLikeTemperatureLabel.text = weather.feelsLikeTemperatureString
+            self.weatherIconImageView.image = UIImage(systemName: weather.systemIconNameString)
+        }
+    }
+}
