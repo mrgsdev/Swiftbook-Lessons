@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import CoreLocation
 class NetworkWeatherManager {
     
     var onCompletion: ((CurrentWeather) -> Void)?
@@ -14,6 +15,17 @@ class NetworkWeatherManager {
         // API
         let apiKey = "9da98dc83df80ab8c815947f4f92cf1a"
         let urlString = "https://api.openweathermap.org/data/2.5/weather?q=\(city)&appid=\(apiKey)&units=metric"
+        performRequest(withURLString: urlString)
+    }
+    
+    func fetchCurrentWeather(forLatitude latitude:CLLocationDegrees,longitude:CLLocationDegrees) {
+        // API
+        let apiKey = "9da98dc83df80ab8c815947f4f92cf1a"
+        let urlString = "https://api.openweathermap.org/data/2.5/weather?lat=\(latitude)&lon=\(longitude)&appid=\(apiKey)&units=metric"
+      performRequest(withURLString: urlString)
+    }
+    
+    fileprivate func performRequest(withURLString urlString: String) {
         guard let url = URL(string: urlString) else { return }
         let task = URLSession.shared.dataTask(with: url) { data, response, error in
             if let data = data {
@@ -27,7 +39,9 @@ class NetworkWeatherManager {
         }
         task.resume()
     }
-    func pasrseJSON(withData data:Data) -> CurrentWeather? {
+    
+    
+    fileprivate func pasrseJSON(withData data:Data) -> CurrentWeather? {
         let decoder = JSONDecoder()
         do{
             let currentWeatherData = try decoder.decode(CurrentWeatherData.self, from: data)
