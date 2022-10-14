@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		426CE8F928F96D0200514AB4 /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 426CE8F828F96D0200514AB4 /* Profile.swift */; };
 		42835C0728F82E1B000D2A9A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42835C0628F82E1B000D2A9A /* AppDelegate.swift */; };
 		42835C0928F82E1B000D2A9A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42835C0828F82E1B000D2A9A /* SceneDelegate.swift */; };
 		42835C0B28F82E1B000D2A9A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42835C0A28F82E1B000D2A9A /* ViewController.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		426CE8F828F96D0200514AB4 /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
 		42835C0328F82E1B000D2A9A /* MVVM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MVVM.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		42835C0628F82E1B000D2A9A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		42835C0828F82E1B000D2A9A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -58,6 +60,7 @@
 			children = (
 				42835C0628F82E1B000D2A9A /* AppDelegate.swift */,
 				42835C0828F82E1B000D2A9A /* SceneDelegate.swift */,
+				426CE8F828F96D0200514AB4 /* Profile.swift */,
 				42835C0A28F82E1B000D2A9A /* ViewController.swift */,
 				42835C0C28F82E1B000D2A9A /* Main.storyboard */,
 				42835C0F28F82E1C000D2A9A /* Assets.xcassets */,
@@ -139,6 +142,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				42835C0B28F82E1B000D2A9A /* ViewController.swift in Sources */,
+				426CE8F928F96D0200514AB4 /* Profile.swift in Sources */,
 				42835C0728F82E1B000D2A9A /* AppDelegate.swift in Sources */,
 				42835C0928F82E1B000D2A9A /* SceneDelegate.swift in Sources */,
 			);
@@ -287,6 +291,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = MVVM/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -314,6 +319,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = MVVM/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
