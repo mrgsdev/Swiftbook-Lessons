@@ -9,28 +9,26 @@ import UIKit
 
 class TableViewController: UITableViewController {
 
-    var profiles:[Profile] = []
+    var viewModel:TableViewModelType?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        profiles = [
-            Profile(name: "John", secondName: "Smith", age: 33),
-            Profile(name: "Kira", secondName: "Ivanova", age: 27),
-            Profile(name: "Misha", secondName: "Petrov", age: 33),
-        ]
+       viewModel = ViewModelTableVC()
     }
     // MARK: - Table view data source
  
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return profiles.count
+        return viewModel?.numberOfRows ?? 0
     }
 
   
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! TableViewCell
-        cell.fullNameLabel.text = profiles[indexPath.row].name + " " +  profiles[indexPath.row].secondName
-        cell.ageLabel.text = profiles[indexPath.row].age.description
+        guard let viewModel = viewModel else { return UITableViewCell() }
+        cell.fullNameLabel.text = viewModel.profiles[indexPath.row].name + " " +  viewModel.profiles[indexPath.row].secondName
+        cell.ageLabel.text = viewModel.profiles[indexPath.row].age.description
         
 
         return cell
