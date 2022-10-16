@@ -9,7 +9,7 @@ import UIKit
 
 class TableViewController: UITableViewController {
 
-    var viewModel:TableViewModelType?
+    var viewModel:TableViewViewModelType?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,10 +27,9 @@ class TableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! TableViewCell
         guard let viewModel = viewModel else { return UITableViewCell() }
-        cell.fullNameLabel.text = viewModel.profiles[indexPath.row].name + " " +  viewModel.profiles[indexPath.row].secondName
-        cell.ageLabel.text = viewModel.profiles[indexPath.row].age.description
-        
+        let cellViewModel = viewModel.cellForViewModel(forIndexPath: indexPath)
 
+        cell.viewModel = cellViewModel
         return cell
     }
  

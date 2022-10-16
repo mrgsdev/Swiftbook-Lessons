@@ -8,7 +8,12 @@
 import Foundation
 
 
-class ViewModelTableVC: TableViewModelType {
+class ViewModelTableVC: TableViewViewModelType {
+    func cellForViewModel(forIndexPath indexPath : IndexPath) -> TableViewCellViewModelType? {
+        let profile = profiles[indexPath.row]
+        return TableViewCellViewModel(profile:profile)
+    }
+    
     var numberOfRows: Int {
         return profiles.count
     }
