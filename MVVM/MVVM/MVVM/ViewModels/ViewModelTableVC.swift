@@ -14,9 +14,10 @@ class ViewModelTableVC: TableViewViewModelType {
         return TableViewCellViewModel(profile:profile)
     }
     
-    var numberOfRows: Int {
+    func numberOfRows() -> Int {
         return profiles.count
     }
+    
    var profiles = [
         Profile(name: "John", secondName: "Smith", age: 33),
         Profile(name: "Kira", secondName: "Ivanova", age: 27),
