@@ -22,6 +22,9 @@
 		42835C0E28F82E1B000D2A9A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 42835C0C28F82E1B000D2A9A /* Main.storyboard */; };
 		42835C1028F82E1C000D2A9A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 42835C0F28F82E1C000D2A9A /* Assets.xcassets */; };
 		42835C1328F82E1C000D2A9A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 42835C1128F82E1C000D2A9A /* LaunchScreen.storyboard */; };
+		42D9B31528FEB04E007B0F99 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42D9B31428FEB04E007B0F99 /* DetailViewController.swift */; };
+		42D9B31728FEB082007B0F99 /* DetailViewModelType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42D9B31628FEB082007B0F99 /* DetailViewModelType.swift */; };
+		42D9B31928FEB0C7007B0F99 /* DetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42D9B31828FEB0C7007B0F99 /* DetailViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +45,9 @@
 		42835C0F28F82E1C000D2A9A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		42835C1228F82E1C000D2A9A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		42835C1428F82E1C000D2A9A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		42D9B31428FEB04E007B0F99 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		42D9B31628FEB082007B0F99 /* DetailViewModelType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewModelType.swift; sourceTree = "<group>"; };
+		42D9B31828FEB0C7007B0F99 /* DetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +66,7 @@
 			children = (
 				426CE8FA28F96E8400514AB4 /* ViewModel.swift */,
 				42558BFE28FC696A008E5397 /* ViewModelTableVC.swift */,
+				42D9B31828FEB0C7007B0F99 /* DetailViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -76,7 +83,9 @@
 		426CE90328F9725300514AB4 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				426CE8FC28F9709100514AB4 /* TableViewController.swift */,
 				426CE90028F971F400514AB4 /* TableViewCell.swift */,
+				42D9B31428FEB04E007B0F99 /* DetailViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -100,6 +109,7 @@
 		42835C0528F82E1B000D2A9A /* MVVM */ = {
 			isa = PBXGroup;
 			children = (
+				42D9B31628FEB082007B0F99 /* DetailViewModelType.swift */,
 				42558C0528FC6FDF008E5397 /* TableViewCellViewModel.swift */,
 				42558C0328FC6F06008E5397 /* TableViewCellViewModelType.swift */,
 				42558C0128FC6D5D008E5397 /* TableViewViewModelType.swift */,
@@ -110,7 +120,6 @@
 				42558C0028FC6B71008E5397 /* ViewModels */,
 				42835C0C28F82E1B000D2A9A /* Main.storyboard */,
 				42835C0A28F82E1B000D2A9A /* ViewController.swift */,
-				426CE8FC28F9709100514AB4 /* TableViewController.swift */,
 				42835C0F28F82E1C000D2A9A /* Assets.xcassets */,
 				42835C1128F82E1C000D2A9A /* LaunchScreen.storyboard */,
 				42835C1428F82E1C000D2A9A /* Info.plist */,
@@ -189,6 +198,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				42D9B31528FEB04E007B0F99 /* DetailViewController.swift in Sources */,
 				426CE8FB28F96E8400514AB4 /* ViewModel.swift in Sources */,
 				42558C0628FC6FDF008E5397 /* TableViewCellViewModel.swift in Sources */,
 				42558C0228FC6D5D008E5397 /* TableViewViewModelType.swift in Sources */,
@@ -197,9 +207,11 @@
 				426CE8FF28F970DC00514AB4 /* ProfileTableVC.swift in Sources */,
 				42835C0B28F82E1B000D2A9A /* ViewController.swift in Sources */,
 				426CE8F928F96D0200514AB4 /* Profile.swift in Sources */,
+				42D9B31728FEB082007B0F99 /* DetailViewModelType.swift in Sources */,
 				42835C0728F82E1B000D2A9A /* AppDelegate.swift in Sources */,
 				42558BFF28FC696A008E5397 /* ViewModelTableVC.swift in Sources */,
 				42558C0428FC6F06008E5397 /* TableViewCellViewModelType.swift in Sources */,
+				42D9B31928FEB0C7007B0F99 /* DetailViewModel.swift in Sources */,
 				42835C0928F82E1B000D2A9A /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
