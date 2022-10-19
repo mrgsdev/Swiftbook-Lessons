@@ -64,6 +64,7 @@
 		42558C0028FC6B71008E5397 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				42558C0528FC6FDF008E5397 /* TableViewCellViewModel.swift */,
 				426CE8FA28F96E8400514AB4 /* ViewModel.swift */,
 				42558BFE28FC696A008E5397 /* ViewModelTableVC.swift */,
 				42D9B31828FEB0C7007B0F99 /* DetailViewModel.swift */,
@@ -83,6 +84,7 @@
 		426CE90328F9725300514AB4 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				42835C0A28F82E1B000D2A9A /* ViewController.swift */,
 				426CE8FC28F9709100514AB4 /* TableViewController.swift */,
 				426CE90028F971F400514AB4 /* TableViewCell.swift */,
 				42D9B31428FEB04E007B0F99 /* DetailViewController.swift */,
@@ -109,22 +111,28 @@
 		42835C0528F82E1B000D2A9A /* MVVM */ = {
 			isa = PBXGroup;
 			children = (
-				42D9B31628FEB082007B0F99 /* DetailViewModelType.swift */,
-				42558C0528FC6FDF008E5397 /* TableViewCellViewModel.swift */,
-				42558C0328FC6F06008E5397 /* TableViewCellViewModelType.swift */,
-				42558C0128FC6D5D008E5397 /* TableViewViewModelType.swift */,
+				42DB15B329008D3100BA0163 /* Protocols */,
 				42835C0628F82E1B000D2A9A /* AppDelegate.swift */,
 				42835C0828F82E1B000D2A9A /* SceneDelegate.swift */,
 				426CE90228F9724200514AB4 /* Model */,
 				426CE90328F9725300514AB4 /* View */,
 				42558C0028FC6B71008E5397 /* ViewModels */,
 				42835C0C28F82E1B000D2A9A /* Main.storyboard */,
-				42835C0A28F82E1B000D2A9A /* ViewController.swift */,
 				42835C0F28F82E1C000D2A9A /* Assets.xcassets */,
 				42835C1128F82E1C000D2A9A /* LaunchScreen.storyboard */,
 				42835C1428F82E1C000D2A9A /* Info.plist */,
 			);
 			path = MVVM;
+			sourceTree = "<group>";
+		};
+		42DB15B329008D3100BA0163 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				42558C0128FC6D5D008E5397 /* TableViewViewModelType.swift */,
+				42558C0328FC6F06008E5397 /* TableViewCellViewModelType.swift */,
+				42D9B31628FEB082007B0F99 /* DetailViewModelType.swift */,
+			);
+			path = Protocols;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
