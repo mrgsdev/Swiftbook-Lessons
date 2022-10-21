@@ -12,6 +12,9 @@
 		42558C0428FC6F06008E5397 /* TableViewCellViewModelType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42558C0328FC6F06008E5397 /* TableViewCellViewModelType.swift */; };
 		42558C0628FC6FDF008E5397 /* TableViewCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42558C0528FC6FDF008E5397 /* TableViewCellViewModel.swift */; };
 		4266468529056BCA00789B8C /* Box.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4266468429056BCA00789B8C /* Box.swift */; };
+		4266468729056D7100789B8C /* TableViewControllerMVVM3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4266468629056D7100789B8C /* TableViewControllerMVVM3.swift */; };
+		4266468929056D8700789B8C /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4266468829056D8700789B8C /* NetworkManager.swift */; };
+		4266468B29056DAB00789B8C /* ViewModelMVVM3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4266468A29056DAB00789B8C /* ViewModelMVVM3.swift */; };
 		426CE8F928F96D0200514AB4 /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 426CE8F828F96D0200514AB4 /* Profile.swift */; };
 		426CE8FB28F96E8400514AB4 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 426CE8FA28F96E8400514AB4 /* ViewModel.swift */; };
 		426CE8FD28F9709100514AB4 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 426CE8FC28F9709100514AB4 /* TableViewController.swift */; };
@@ -34,6 +37,9 @@
 		42558C0328FC6F06008E5397 /* TableViewCellViewModelType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCellViewModelType.swift; sourceTree = "<group>"; };
 		42558C0528FC6FDF008E5397 /* TableViewCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCellViewModel.swift; sourceTree = "<group>"; };
 		4266468429056BCA00789B8C /* Box.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Box.swift; sourceTree = "<group>"; };
+		4266468629056D7100789B8C /* TableViewControllerMVVM3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewControllerMVVM3.swift; sourceTree = "<group>"; };
+		4266468829056D8700789B8C /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		4266468A29056DAB00789B8C /* ViewModelMVVM3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelMVVM3.swift; sourceTree = "<group>"; };
 		426CE8F828F96D0200514AB4 /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
 		426CE8FA28F96E8400514AB4 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		426CE8FC28F9709100514AB4 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
@@ -113,6 +119,7 @@
 		42835C0528F82E1B000D2A9A /* MVVM */ = {
 			isa = PBXGroup;
 			children = (
+				4266468A29056DAB00789B8C /* ViewModelMVVM3.swift */,
 				42DB15B329008D3100BA0163 /* Protocols */,
 				42835C0628F82E1B000D2A9A /* AppDelegate.swift */,
 				42835C0828F82E1B000D2A9A /* SceneDelegate.swift */,
@@ -120,6 +127,8 @@
 				426CE90328F9725300514AB4 /* View */,
 				42558C0028FC6B71008E5397 /* ViewModels */,
 				42835C0C28F82E1B000D2A9A /* Main.storyboard */,
+				4266468829056D8700789B8C /* NetworkManager.swift */,
+				4266468629056D7100789B8C /* TableViewControllerMVVM3.swift */,
 				42835C0F28F82E1C000D2A9A /* Assets.xcassets */,
 				42835C1128F82E1C000D2A9A /* LaunchScreen.storyboard */,
 				42835C1428F82E1C000D2A9A /* Info.plist */,
@@ -209,12 +218,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4266468929056D8700789B8C /* NetworkManager.swift in Sources */,
+				4266468B29056DAB00789B8C /* ViewModelMVVM3.swift in Sources */,
 				42D9B31528FEB04E007B0F99 /* DetailViewController.swift in Sources */,
 				426CE8FB28F96E8400514AB4 /* ViewModel.swift in Sources */,
 				42558C0628FC6FDF008E5397 /* TableViewCellViewModel.swift in Sources */,
 				42558C0228FC6D5D008E5397 /* TableViewViewModelType.swift in Sources */,
 				426CE90128F971F400514AB4 /* TableViewCell.swift in Sources */,
 				426CE8FD28F9709100514AB4 /* TableViewController.swift in Sources */,
+				4266468729056D7100789B8C /* TableViewControllerMVVM3.swift in Sources */,
 				426CE8FF28F970DC00514AB4 /* ProfileTableVC.swift in Sources */,
 				42835C0B28F82E1B000D2A9A /* ViewController.swift in Sources */,
 				426CE8F928F96D0200514AB4 /* Profile.swift in Sources */,
