@@ -25,6 +25,6 @@
 ![photo](https://user-images.githubusercontent.com/107209053/195576709-a3841cdf-87eb-4953-a425-5b17b0ea4652.png)
 ## 
 <a name="5"></a>
-# [MVVM](https://github.com/mrgsdev/Swiftbook-Lessons/tree/main/MVVM/MVVM) 
+# [MVVM](https://github.com/mrgsdev/Swiftbook-Lessons/tree/main/MVVM) 
 ![MVVM](https://user-images.githubusercontent.com/107209053/197393159-a94d356d-3ef9-43f4-8389-4a064ee09d98.png)
 ## 
