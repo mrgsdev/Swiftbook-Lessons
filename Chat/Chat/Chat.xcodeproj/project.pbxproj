@@ -9,19 +9,29 @@
 /* Begin PBXBuildFile section */
 		42305F0D2908007200D90B8C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42305F0C2908007200D90B8C /* AppDelegate.swift */; };
 		42305F0F2908007200D90B8C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42305F0E2908007200D90B8C /* SceneDelegate.swift */; };
-		42305F112908007200D90B8C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42305F102908007200D90B8C /* ViewController.swift */; };
+		42305F112908007200D90B8C /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42305F102908007200D90B8C /* AuthViewController.swift */; };
 		42305F162908007300D90B8C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 42305F152908007300D90B8C /* Assets.xcassets */; };
 		42305F192908007300D90B8C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 42305F172908007300D90B8C /* LaunchScreen.storyboard */; };
+		4270A3B4293FEEF700E05DCD /* UIButton + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4270A3B3293FEEF700E05DCD /* UIButton + Extension.swift */; };
+		4270A3B6293FEF1200E05DCD /* UIFont + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4270A3B5293FEF1200E05DCD /* UIFont + Extension.swift */; };
+		4270A3B8293FEF2B00E05DCD /* UIColor + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4270A3B7293FEF2B00E05DCD /* UIColor + Extension.swift */; };
+		4270A3BB293FEF3F00E05DCD /* UIImageView + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4270A3BA293FEF3F00E05DCD /* UIImageView + Extension.swift */; };
+		4270A3BD293FEF5600E05DCD /* Label + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4270A3BC293FEF5600E05DCD /* Label + Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		42305F092908007200D90B8C /* Chat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Chat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		42305F0C2908007200D90B8C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		42305F0E2908007200D90B8C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		42305F102908007200D90B8C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		42305F102908007200D90B8C /* AuthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewController.swift; sourceTree = "<group>"; };
 		42305F152908007300D90B8C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		42305F182908007300D90B8C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		42305F1A2908007300D90B8C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4270A3B3293FEEF700E05DCD /* UIButton + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton + Extension.swift"; sourceTree = "<group>"; };
+		4270A3B5293FEF1200E05DCD /* UIFont + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont + Extension.swift"; sourceTree = "<group>"; };
+		4270A3B7293FEF2B00E05DCD /* UIColor + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor + Extension.swift"; sourceTree = "<group>"; };
+		4270A3BA293FEF3F00E05DCD /* UIImageView + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView + Extension.swift"; sourceTree = "<group>"; };
+		4270A3BC293FEF5600E05DCD /* Label + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Label + Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +64,27 @@
 		42305F0B2908007200D90B8C /* Chat */ = {
 			isa = PBXGroup;
 			children = (
+				4270A3B2293FEDFB00E05DCD /* Extension */,
 				42305F0C2908007200D90B8C /* AppDelegate.swift */,
 				42305F0E2908007200D90B8C /* SceneDelegate.swift */,
-				42305F102908007200D90B8C /* ViewController.swift */,
+				42305F102908007200D90B8C /* AuthViewController.swift */,
 				42305F152908007300D90B8C /* Assets.xcassets */,
 				42305F172908007300D90B8C /* LaunchScreen.storyboard */,
 				42305F1A2908007300D90B8C /* Info.plist */,
 			);
 			path = Chat;
+			sourceTree = "<group>";
+		};
+		4270A3B2293FEDFB00E05DCD /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				4270A3B3293FEEF700E05DCD /* UIButton + Extension.swift */,
+				4270A3B5293FEF1200E05DCD /* UIFont + Extension.swift */,
+				4270A3B7293FEF2B00E05DCD /* UIColor + Extension.swift */,
+				4270A3BA293FEF3F00E05DCD /* UIImageView + Extension.swift */,
+				4270A3BC293FEF5600E05DCD /* Label + Extension.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -134,9 +157,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				42305F112908007200D90B8C /* ViewController.swift in Sources */,
+				4270A3B6293FEF1200E05DCD /* UIFont + Extension.swift in Sources */,
+				42305F112908007200D90B8C /* AuthViewController.swift in Sources */,
+				4270A3BD293FEF5600E05DCD /* Label + Extension.swift in Sources */,
+				4270A3BB293FEF3F00E05DCD /* UIImageView + Extension.swift in Sources */,
 				42305F0D2908007200D90B8C /* AppDelegate.swift in Sources */,
+				4270A3B8293FEF2B00E05DCD /* UIColor + Extension.swift in Sources */,
 				42305F0F2908007200D90B8C /* SceneDelegate.swift in Sources */,
+				4270A3B4293FEEF700E05DCD /* UIButton + Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
