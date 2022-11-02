@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		422167992940A2EE00FFDD13 /* ButtonFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 422167982940A2EE00FFDD13 /* ButtonFormView.swift */; };
+		4221679B2940A34F00FFDD13 /* StackView + Entension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4221679A2940A34F00FFDD13 /* StackView + Entension.swift */; };
 		42305F0D2908007200D90B8C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42305F0C2908007200D90B8C /* AppDelegate.swift */; };
 		42305F0F2908007200D90B8C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42305F0E2908007200D90B8C /* SceneDelegate.swift */; };
 		42305F112908007200D90B8C /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42305F102908007200D90B8C /* AuthViewController.swift */; };
@@ -20,6 +22,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		422167982940A2EE00FFDD13 /* ButtonFormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonFormView.swift; sourceTree = "<group>"; };
+		4221679A2940A34F00FFDD13 /* StackView + Entension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "StackView + Entension.swift"; sourceTree = "<group>"; };
 		42305F092908007200D90B8C /* Chat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Chat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		42305F0C2908007200D90B8C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		42305F0E2908007200D90B8C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -83,6 +87,8 @@
 				4270A3B7293FEF2B00E05DCD /* UIColor + Extension.swift */,
 				4270A3BA293FEF3F00E05DCD /* UIImageView + Extension.swift */,
 				4270A3BC293FEF5600E05DCD /* Label + Extension.swift */,
+				422167982940A2EE00FFDD13 /* ButtonFormView.swift */,
+				4221679A2940A34F00FFDD13 /* StackView + Entension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -160,9 +166,11 @@
 				4270A3B6293FEF1200E05DCD /* UIFont + Extension.swift in Sources */,
 				42305F112908007200D90B8C /* AuthViewController.swift in Sources */,
 				4270A3BD293FEF5600E05DCD /* Label + Extension.swift in Sources */,
+				422167992940A2EE00FFDD13 /* ButtonFormView.swift in Sources */,
 				4270A3BB293FEF3F00E05DCD /* UIImageView + Extension.swift in Sources */,
 				42305F0D2908007200D90B8C /* AppDelegate.swift in Sources */,
 				4270A3B8293FEF2B00E05DCD /* UIColor + Extension.swift in Sources */,
+				4221679B2940A34F00FFDD13 /* StackView + Entension.swift in Sources */,
 				42305F0F2908007200D90B8C /* SceneDelegate.swift in Sources */,
 				4270A3B4293FEEF700E05DCD /* UIButton + Extension.swift in Sources */,
 			);
