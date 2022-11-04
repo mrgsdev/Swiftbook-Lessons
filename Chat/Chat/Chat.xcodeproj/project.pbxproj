@@ -11,6 +11,7 @@
 		4221679B2940A34F00FFDD13 /* StackView + Entension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4221679A2940A34F00FFDD13 /* StackView + Entension.swift */; };
 		4221679D2940A3FD00FFDD13 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4221679C2940A3FD00FFDD13 /* SignUpViewController.swift */; };
 		4221679F2940A44300FFDD13 /* OneLineTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4221679E2940A44300FFDD13 /* OneLineTextField.swift */; };
+		422167A12940A4A900FFDD13 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 422167A02940A4A900FFDD13 /* LoginViewController.swift */; };
 		42305F0D2908007200D90B8C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42305F0C2908007200D90B8C /* AppDelegate.swift */; };
 		42305F0F2908007200D90B8C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42305F0E2908007200D90B8C /* SceneDelegate.swift */; };
 		42305F112908007200D90B8C /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42305F102908007200D90B8C /* AuthViewController.swift */; };
@@ -28,6 +29,7 @@
 		4221679A2940A34F00FFDD13 /* StackView + Entension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "StackView + Entension.swift"; sourceTree = "<group>"; };
 		4221679C2940A3FD00FFDD13 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		4221679E2940A44300FFDD13 /* OneLineTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OneLineTextField.swift; sourceTree = "<group>"; };
+		422167A02940A4A900FFDD13 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		42305F092908007200D90B8C /* Chat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Chat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		42305F0C2908007200D90B8C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		42305F0E2908007200D90B8C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -80,6 +82,7 @@
 				42305F172908007300D90B8C /* LaunchScreen.storyboard */,
 				42305F1A2908007300D90B8C /* Info.plist */,
 				4221679C2940A3FD00FFDD13 /* SignUpViewController.swift */,
+				422167A02940A4A900FFDD13 /* LoginViewController.swift */,
 			);
 			path = Chat;
 			sourceTree = "<group>";
@@ -180,6 +183,7 @@
 				4270A3B8293FEF2B00E05DCD /* UIColor + Extension.swift in Sources */,
 				4221679B2940A34F00FFDD13 /* StackView + Entension.swift in Sources */,
 				42305F0F2908007200D90B8C /* SceneDelegate.swift in Sources */,
+				422167A12940A4A900FFDD13 /* LoginViewController.swift in Sources */,
 				4270A3B4293FEEF700E05DCD /* UIButton + Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
